@@ -308,7 +308,7 @@ double invlink(int link, double eta) {
 
 double dlink(int link, double mu) {
   switch (link) {
-  case 1: return(1.0/(mu/(1.0-mu)));     /* Logit */
+  case 1: return(1.0/(mu*(1.0-mu)));     /* Logit */
   case 2: return(1.0/mu);                /* Log */
   case 3: return(1.0);                   /* Identity */
   case 4: return(1.0/(mu*mu));           /* Inverse */
