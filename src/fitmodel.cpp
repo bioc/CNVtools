@@ -864,7 +864,7 @@ void CNV_signal::FillGaps()
   
   for(int i = 0; i != ncohorts; ++i){
     for(int j = 0; j != ncomp; ++j){
-      variances[i][j] = 0.1;
+      variances[i][j] = 0.0001;
       nus[i][j] = -99.;
       means[i][j] = -99.;
       postLogit[j] = 0.;
@@ -882,7 +882,7 @@ void CNV_signal::FillGaps()
   for (int i = 0; i != length; i++) {
     if (posterior[i] > postTable [cohort[i] - 1 ][ cn[i] ] ) {
       nus[ cohort[i] - 1 ][ cn[i] ] = nu[i];
-      variances[ cohort[i] - 1 ][ cn[i] ] = variance[i];
+      if (variance[i] > 0) variances[ cohort[i] - 1 ][ cn[i] ] = variance[i];
       means[ cohort[i] - 1 ][ cn[i] ] = mean[i];
       postTable [cohort[i] - 1 ][ cn[i] ] = posterior[i];
     }
