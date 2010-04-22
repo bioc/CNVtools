@@ -1,2 +1,10 @@
-export(CNVtest.select.model,CNVtest.binary,CNVtest.binary.T,CNVtest.qt,CNVtest.qt.T,apply.pca,apply.ldf,cnv.plot,qt.plot,getQualityScore,compact.data.frame,get.model.spec,CNV.fitModel)
 useDynLib(CNVtools)
+
+importFrom(graphics, abline, hist, lines, par, plot, title)
+importFrom(stats, as.formula, cancor, density, lm, model.matrix,
+           prcomp, runif, sd, terms)
+importFrom(survival, strata, untangle.specials)
+
+export(CNVtest.select.model,CNVtest.binary,CNVtest.binary.T,CNVtest.qt,
+       CNVtest.qt.T,apply.pca,apply.ldf,cnv.plot,qt.plot,getQualityScore,
+       compact.data.frame,get.model.spec,CNV.fitModel)
