@@ -5,7 +5,7 @@
 \documentclass[10pt]{article}
 \usepackage{amsmath, amsfonts, amssymb, amsthm}
 \usepackage{graphicx}
-\usepackage{fullpage}
+\usepackage[margin=2cm]{geometry}
 
 
 \title{CNVtools}
