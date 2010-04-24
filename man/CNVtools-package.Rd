@@ -11,8 +11,8 @@ association testing of Copy Number Variants.
 \tabular{ll}{
 Package: \tab CNVtools\cr
 Type: \tab Package\cr
-Version: \tab 1.41\cr
-Date: \tab 2009-10-15\cr
+Version: \tab 1.42.3\cr
+Date: \tab 2009-06-23\cr
 License: \tab  Artistic License, v2.0 \cr
 URL: \tab \url{http://cnv-tools.sourceforge.net/} \cr
 \tab \cr
