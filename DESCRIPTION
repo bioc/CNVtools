@@ -1,7 +1,7 @@
 Package: CNVtools
 Type: Package
 Title: A package to test genetic association with CNV data
-Version: 1.46.0
+Version: 1.47.0
 Date: 2009-10-06
 Author: Chris Barnes <christopher.barnes@imperial.ac.uk> and Vincent Plagnol <vincent.plagnol@cimr.cam.ac.uk>
 Maintainer: Chris Barnes <christopher.barnes@imperial.ac.uk>
