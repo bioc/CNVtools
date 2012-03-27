@@ -7,7 +7,7 @@ function (full.frame)
     names(full.frame.mod) <- paste("P", c(1:(dim(full.frame.mod)[2])), 
         sep = "")
     full.frame.mod$cn <- apply(full.frame.mod, FUN = which.max, 
-        MAR = 1)
+        MARGIN = 1)
     full.frame.mod$subject <- row.names(full.frame.mod)
     full.frame <- subset(full.frame[, c("subject", "batch", "signal", 
         "trait")], full.frame$cn == 1)

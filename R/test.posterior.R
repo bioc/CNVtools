@@ -4,7 +4,7 @@ function (frame, ncomp, samples.by.disease = NULL)
     bad.fit <- FALSE
     comp <- c(1:ncomp)
     col <- paste("P", comp, sep = "")
-    frame$average <- apply(MAR = 1, frame[, col, drop = FALSE], 
+    frame$average <- apply(MARGIN = 1, frame[, col, drop = FALSE], 
         FUN = function(x) {
             sum(x * comp)
         })
