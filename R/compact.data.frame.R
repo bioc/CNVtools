@@ -2,8 +2,10 @@ compact.data.frame <-
 function (full.frame) 
 {
     full.frame <- full.frame[order(full.frame$cn), ]
-    full.frame.mod <- do.call(rbind.data.frame, split(x = full.frame$posterior, 
-        f = full.frame$subject))
+    full.frame.mod <- do.call(
+        rbind.data.frame,
+        split(x = full.frame$posterior, f = full.frame$subject))
+    rownames(full.frame.mod) <- levels(full.frame$subject)
     names(full.frame.mod) <- paste("P", c(1:(dim(full.frame.mod)[2])), 
         sep = "")
     full.frame.mod$cn <- apply(full.frame.mod, FUN = which.max, 

@@ -67,7 +67,7 @@ dimnames(raw.signal)[[1]] <- A112$subject
 mean.signal <- apply(raw.signal, MAR=1, FUN=mean)
 pca.signal <- apply.pca(raw.signal)
 
-
+dir.create("fig")
 pdf("fig/mean_pca_signal.pdf", width=10, height=5)
 par(mfrow=c(1,2))
 hist(mean.signal, breaks=50, main='Mean signal', cex.lab=1.3)
