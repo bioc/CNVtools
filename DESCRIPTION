@@ -1,7 +1,7 @@
 Package: CNVtools
 Type: Package
 Title: A package to test genetic association with CNV data
-Version: 1.83.0
+Version: 1.83.1
 Date: 2009-10-06
 Author: Chris Barnes <christopher.barnes@imperial.ac.uk> and Vincent Plagnol <vincent.plagnol@cimr.cam.ac.uk>
 Maintainer: Chris Barnes <christopher.barnes@imperial.ac.uk>
@@ -9,3 +9,4 @@ Description: This package is meant to facilitate the testing of Copy Number Vari
 License: GPL-3
 Depends: R (>= 2.10), survival
 biocViews: GeneticVariability
+PackageStatus: Deprecated
